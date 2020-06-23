@@ -39,7 +39,7 @@ async function addMovie() {
             };
             let response = await fetch(url, options);
             let results = await response.json();
-            console.log(response);
+            // console.log(response);
             alert(`Terimakasih film yang anda masukan sudah kami daftarkan`);
         }
     } catch (error) {
