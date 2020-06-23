@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+/* container */
+#container {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+/* input - button */
+input,
+button,
+textarea {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
