@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: aqua;
+    font-family: "Philosopher", sans-serif;
+}
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
 }
 /* container */
 #container {
