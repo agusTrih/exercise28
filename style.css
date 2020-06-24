@@ -26,3 +26,41 @@ textarea {
     margin-bottom: 5px;
     border: 1px solid black;
 }
+/* img */
+.image {
+    width: 25%;
+    display: flex;
+}
+img {
+    width: 80px;
+    position: static;
+    z-index: 2;
+}
+
+/* output */
+#output {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* style card */
+
+#card {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 10px 10px 10px;
+    width: 20%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-movie {
+    padding: 2px 16px;
+}

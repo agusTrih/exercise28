@@ -46,3 +46,37 @@ async function addMovie() {
         console.error(error);
     }
 }
+
+// get
+
+let endpoint = `https://5ef168cb1faf160016b4d5b8.mockapi.io/api/movie`;
+let options = {
+    method: "GET",
+};
+
+fetch(endpoint, options)
+    .then((Response) => Response.json())
+    .then((results) => {
+        console.log(results);
+        results.forEach((result) => {
+            const output = document.getElementById("output");
+            const card = document.createElement("div");
+            card.setAttribute("id", "card");
+            output.appendChild(card);
+
+            // card get
+            card.innerHTML = `
+            <div class="image">
+            <img src=${result.imageUrl} /></div>
+            <div class="text-movie">
+            <div class="title-genre">
+            <p class="title">Title: ${result.title}</p>
+            <p class="genre">Genre: ${result.genre}</p>
+            <p class="release">Release Year: ${result.releaseYear}</p>
+            </div>
+            <p class="desc">Deskripsi: ${result.desc}</p>
+            </div>
+            `;
+        });
+    })
+    .catch((error) => console.log(error));
